@@ -232,6 +232,15 @@ h1 {
   transform: rotate(1.2deg);
 }
 
+.lyric-image-card {
+  width: min(568px, 92%);
+  height: auto;
+  align-self: center;
+  justify-self: center;
+  display: block;
+  box-shadow: 18px 22px 0 var(--paper-deep);
+}
+
 .lyric-card-header {
   display: flex;
   align-items: center;
@@ -602,7 +611,8 @@ footer p {
   }
 
   .contact-sheet,
-  .lyric-card {
+  .lyric-card,
+  .lyric-image-card {
     max-width: 760px;
   }
 
@@ -670,6 +680,11 @@ footer p {
     padding: 28px;
     border-radius: 22px;
     box-shadow: 9px 11px 0 #d889a3;
+  }
+
+  .lyric-image-card {
+    width: 100%;
+    box-shadow: 9px 11px 0 var(--paper-deep);
   }
 
   .lyric-lines {

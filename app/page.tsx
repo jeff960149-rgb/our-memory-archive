@@ -57,28 +57,11 @@ export default function Home() {
             in your career, your friendships, and in love.
           </p>
         </div>
-        <div className="lyric-card" aria-label="A love note styled as a music card">
-          <div className="lyric-card-header">
-            <span className="lyric-eye" aria-hidden="true">👁️</span>
-            <div>
-              <span>Ivy</span>
-              <strong>Frank Ocean</strong>
-            </div>
-          </div>
-          <p className="lyric-lines">
-            If you could see my thoughts
-            <br />
-            You would see your face
-          </p>
-          <div className="lyric-card-footer">
-            <span className="spotify-mark" aria-hidden="true">
-              <i />
-              <i />
-              <i />
-            </span>
-            <strong>Spotify</strong>
-          </div>
-        </div>
+        <img
+          className="lyric-image-card"
+          src="/iris-lyrics.png"
+          alt="Iris by The Goo Goo Dolls lyric card"
+        />
       </section>
 
       <section className="records" id="records">
