@@ -51,15 +51,24 @@ export default function Home() {
             in your career, your friendships, and in love.
           </p>
         </div>
-        <div className="contact-sheet" aria-label="Placeholders for memory photographs">
-          {Array.from({ length: 12 }, (_, index) => (
-            <div className={`frame frame-${(index % 4) + 1}`} key={index}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
+        <div className="lyric-card" aria-label="A love note styled as a music card">
+          <div className="lyric-card-header">
+            <span className="lyric-eye" aria-hidden="true">👁️</span>
+            <div>
+              <span>For You</span>
+              <strong>Our Memory Archive</strong>
             </div>
-          ))}
-          <div className="sheet-label">
-            <span>ROLL 01</span>
-            <span>SHARED DAYS</span>
+          </div>
+          <p className="lyric-lines">
+            God, you look so pretty
+            <br />
+            When you tell me
+            <br />
+            that you love me
+          </p>
+          <div className="lyric-card-footer">
+            <span className="sound-mark" aria-hidden="true">≈</span>
+            <strong>OUR SONG</strong>
           </div>
         </div>
         <p className="hero-caption">When you do, I&apos;ll be so happy for you.</p>
