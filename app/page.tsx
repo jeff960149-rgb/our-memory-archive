@@ -61,16 +61,14 @@ export default function Home() {
           <div className="lyric-card-header">
             <span className="lyric-eye" aria-hidden="true">👁️</span>
             <div>
-              <span>Self Aware</span>
-              <strong>Temper City</strong>
+              <span>Ivy</span>
+              <strong>Frank Ocean</strong>
             </div>
           </div>
           <p className="lyric-lines">
-            God, you look so pretty
+            If you could see my thoughts
             <br />
-            When you tell me
-            <br />
-            that you love me
+            You would see your face
           </p>
           <div className="lyric-card-footer">
             <span className="spotify-mark" aria-hidden="true">
