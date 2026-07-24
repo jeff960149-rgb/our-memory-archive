@@ -81,10 +81,8 @@ export default function Home() {
         <div className="section-title">
           <span>01</span>
           <div>
-            <p>SELECTED RECORDS</p>
-            <h2>Fragments we kept</h2>
+            <h2>Memories</h2>
           </div>
-          <p className="section-note">These placeholders can later become your real photographs.</p>
         </div>
 
         <div className="record-grid">
