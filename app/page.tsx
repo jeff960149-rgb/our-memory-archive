@@ -37,18 +37,6 @@ const log = [
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
-        <a className="archive-mark" href="#top">
-          <span>ARCHIVE</span>
-          <strong>Our Memories</strong>
-        </a>
-        <nav aria-label="Site navigation">
-          <a href="#records">Photographs</a>
-          <a href="#log">Timeline</a>
-          <span className="privacy">PRIVATE COLLECTION</span>
-        </nav>
-      </header>
-
       <section className="hero" id="top">
         <div className="hero-index">
           <span>COLLECTION / 01</span>

@@ -2,12 +2,12 @@
   --font-geist-sans: Arial, Helvetica, sans-serif;
   --font-geist-mono: "Courier New", monospace;
   --font-noto-serif: Georgia, "Times New Roman", serif;
-  --paper: #f2efe8;
-  --paper-deep: #e4e0d7;
+  --paper: #f7dfe7;
+  --paper-deep: #e8bccb;
   --ink: #252525;
-  --muted: #77736d;
-  --line: #cac6bd;
-  --brick: #9b4b45;
+  --muted: #79686e;
+  --line: #d6adb9;
+  --brick: #9d5066;
   --dark: #1e211f;
 }
 
@@ -99,7 +99,7 @@ main {
   grid-template-columns: 0.8fr 1.2fr;
   grid-template-rows: auto 1fr auto;
   column-gap: 86px;
-  padding: 48px 0 86px;
+  padding: 76px 0 86px;
 }
 
 .hero-index {
@@ -228,7 +228,7 @@ h1 {
 
 .records {
   padding: 110px max(36px, calc((100% - 1360px) / 2)) 140px;
-  background: #e9e5dc;
+  background: #efccd8;
 }
 
 .section-title {
