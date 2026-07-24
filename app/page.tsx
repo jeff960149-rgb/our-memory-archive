@@ -97,20 +97,8 @@ export default function Home() {
       <section className="history" id="log">
         <div className="history-heading">
           <div>
-            <p>VERSION HISTORY</p>
-            <h2>What time left behind</h2>
+            <h2>to be continued....</h2>
           </div>
-          <span>archive/main</span>
-        </div>
-        <div className="log-list">
-          {log.map((item, index) => (
-            <article className="log-row" key={item.hash}>
-              <span className="log-index">{String(index + 1).padStart(2, "0")}</span>
-              <time>{item.date}</time>
-              <h3>{item.title}</h3>
-              <code>{item.hash}</code>
-            </article>
-          ))}
         </div>
       </section>
 
