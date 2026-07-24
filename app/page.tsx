@@ -88,22 +88,6 @@ export default function Home() {
           ))}
         </div>
 
-        {[2, 3, 4].map((page) => (
-          <div className="memory-page" key={page}>
-            <p className="memory-page-label">MEMORY PAGE {String(page).padStart(2, "0")}</p>
-            <div className="memory-page-grid">
-              {Array.from({ length: 3 }, (_, index) => {
-                const photoNumber = (page - 1) * 3 + index + 1;
-                return (
-                  <div className="empty-memory" key={photoNumber}>
-                    <span>PHOTO / {String(photoNumber).padStart(3, "0")}</span>
-                    <strong>Add a memory</strong>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        ))}
       </section>
 
       <section className="statement">
