@@ -426,7 +426,7 @@ h1 {
 }
 
 .record-meta {
-  display: grid;
+  display: none;
   grid-template-columns: auto 1fr auto;
   gap: 16px;
   margin: 18px 0 22px;
@@ -446,11 +446,12 @@ h1 {
 }
 
 .record-card h3 {
-  margin-bottom: 13px;
+  margin: 18px 0 0;
   font: 700 25px var(--font-noto-serif), serif;
 }
 
 .record-card > p {
+  display: none;
   max-width: 360px;
   margin-bottom: 0;
   color: var(--muted);
