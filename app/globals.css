@@ -448,6 +448,51 @@ h1 {
   line-height: 1.75;
 }
 
+.memory-page {
+  margin-top: 96px;
+  padding: 24px;
+  background: rgba(255, 238, 244, 0.34);
+  border: 1px solid rgba(157, 80, 102, 0.26);
+}
+
+.memory-page-label {
+  margin: 0 0 22px;
+  color: var(--brick);
+  font: 10px var(--font-geist-mono), monospace;
+  letter-spacing: 0.16em;
+}
+
+.memory-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.empty-memory {
+  aspect-ratio: 1.18;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: rgba(97, 55, 68, 0.72);
+  background:
+    linear-gradient(rgba(157, 80, 102, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(157, 80, 102, 0.06) 1px, transparent 1px),
+    rgba(255, 235, 241, 0.58);
+  background-size: 22px 22px;
+  border: 1px dashed rgba(157, 80, 102, 0.48);
+}
+
+.empty-memory span {
+  font: 9px var(--font-geist-mono), monospace;
+  letter-spacing: 0.12em;
+}
+
+.empty-memory strong {
+  font: 600 18px var(--font-noto-serif), serif;
+}
+
 .statement {
   padding: 150px 36px;
   text-align: center;
@@ -572,6 +617,10 @@ footer p {
     max-width: calc(50% - 27px);
     grid-column: 1 / -1;
   }
+
+  .memory-page-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 640px) {
@@ -629,6 +678,15 @@ footer p {
 
   .records {
     padding: 78px 18px 90px;
+  }
+
+  .memory-page {
+    margin-top: 56px;
+    padding: 14px;
+  }
+
+  .memory-page-grid {
+    grid-template-columns: 1fr;
   }
 
   .section-title {
