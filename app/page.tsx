@@ -75,7 +75,6 @@ export default function Home() {
             <strong>Spotify</strong>
           </div>
         </div>
-        <p className="hero-caption">When you do, I&apos;ll be so happy for you.</p>
       </section>
 
       <section className="records" id="records">
