@@ -55,8 +55,8 @@ export default function Home() {
           <div className="lyric-card-header">
             <span className="lyric-eye" aria-hidden="true">👁️</span>
             <div>
-              <span>For You</span>
-              <strong>Our Memory Archive</strong>
+              <span>Self Aware</span>
+              <strong>Temper City</strong>
             </div>
           </div>
           <p className="lyric-lines">
