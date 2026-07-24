@@ -27,21 +27,21 @@ export async function generateMetadata(): Promise<Metadata> {
   const socialImage = `${origin}/og.png`;
 
   return {
-    title: "我們的回憶庫",
-    description: "每一次心動，都是一次 commit。",
+    title: "我們確實一起走過",
+    description: "不替未來命名，只把已經發生的好好保存。",
     icons: {
       icon: "/favicon.svg",
       shortcut: "/favicon.svg",
     },
     openGraph: {
-      title: "我們的回憶庫",
-      description: "每一次心動，都是一次 commit。",
+      title: "我們確實一起走過",
+      description: "不替未來命名，只把已經發生的好好保存。",
       images: [{ url: socialImage, width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "我們的回憶庫",
-      description: "每一次心動，都是一次 commit。",
+      title: "我們確實一起走過",
+      description: "不替未來命名，只把已經發生的好好保存。",
       images: [socialImage],
     },
   };
