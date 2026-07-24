@@ -7,6 +7,8 @@ const records = [
     note: "A photograph holds the light—and sometimes the things we did not know how to say.",
     tone: "warm",
     hash: "a14f2e",
+    image: "/memories/memory-01.png",
+    alt: "A close selfie of us together in the park",
   },
   {
     no: "002",
@@ -16,6 +18,8 @@ const records = [
     note: "Some moments were happy for no special reason. We simply happened to be there together.",
     tone: "blue",
     hash: "7c06ad",
+    image: "/memories/memory-02.png",
+    alt: "A sunny day in the park with a bouquet of flowers",
   },
   {
     no: "003",
@@ -25,6 +29,8 @@ const records = [
     note: "Not a promise about the future. Just the truth that, in that moment, we stood side by side.",
     tone: "gray",
     hash: "0101be",
+    image: "/memories/memory-03.png",
+    alt: "Standing in the sunshine with flowers",
   },
 ];
 
@@ -79,7 +85,6 @@ export default function Home() {
 
       <section className="records" id="records">
         <div className="section-title">
-          <span>01</span>
           <div>
             <h2>Memories</h2>
           </div>
@@ -89,8 +94,7 @@ export default function Home() {
           {records.map((record) => (
             <article className="record-card" key={record.hash}>
               <div className={`record-image ${record.tone}`}>
-                <span className="record-number">{record.no}</span>
-                <span className="image-placeholder">PHOTO / {record.no}</span>
+                <img src={record.image} alt={record.alt} />
               </div>
               <div className="record-meta">
                 <time>{record.date}</time>
