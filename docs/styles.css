@@ -2,11 +2,11 @@
   --font-geist-sans: Arial, Helvetica, sans-serif;
   --font-geist-mono: "Courier New", monospace;
   --font-noto-serif: Georgia, "Times New Roman", serif;
-  --paper: #f7dfe7;
-  --paper-deep: #e8bccb;
+  --paper: #f6c6d5;
+  --paper-deep: #df95ad;
   --ink: #252525;
   --muted: #79686e;
-  --line: #d6adb9;
+  --line: #cd8da2;
   --brick: #9d5066;
   --dark: #1e211f;
 }
@@ -228,7 +228,7 @@ h1 {
 
 .records {
   padding: 110px max(36px, calc((100% - 1360px) / 2)) 140px;
-  background: #efccd8;
+  background: #efaec3;
 }
 
 .section-title {
