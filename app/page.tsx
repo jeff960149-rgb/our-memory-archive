@@ -57,11 +57,13 @@ export default function Home() {
             in your career, your friendships, and in love.
           </p>
         </div>
-        <img
-          className="lyric-image-card"
-          src="/iris-lyrics-red.png"
-          alt="Iris by The Goo Goo Dolls lyric card"
-        />
+        <div className="lyric-image-frame">
+          <img
+            className="lyric-image-card"
+            src="/iris-lyrics-red.png"
+            alt="Iris by The Goo Goo Dolls lyric card"
+          />
+        </div>
       </section>
 
       <section className="records" id="records">
