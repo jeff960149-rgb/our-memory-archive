@@ -2,36 +2,36 @@ const records = [
   {
     no: "001",
     date: "2024.02.14",
-    place: "一個記得很清楚的地方",
-    title: "那天，我們一起笑了很久",
-    note: "照片會記住光線，也會記住當時沒有說出口的話。",
+    place: "A place I still remember clearly",
+    title: "The day we laughed for hours",
+    note: "A photograph holds the light—and sometimes the things we did not know how to say.",
     tone: "warm",
     hash: "a14f2e",
   },
   {
     no: "002",
     date: "2024.07.06",
-    place: "途中",
-    title: "一段沒有計畫的路",
-    note: "有些快樂沒有特別的原因，只是剛好身邊是彼此。",
+    place: "Somewhere along the way",
+    title: "A road we never planned",
+    note: "Some moments were happy for no special reason. We simply happened to be there together.",
     tone: "blue",
     hash: "7c06ad",
   },
   {
     no: "003",
     date: "2025.01.01",
-    place: "新年的第一天",
-    title: "一起迎接過的清晨",
-    note: "不是對未來的保證，只是那一刻，我們確實站在一起。",
+    place: "The first morning of the year",
+    title: "A morning we welcomed together",
+    note: "Not a promise about the future. Just the truth that, in that moment, we stood side by side.",
     tone: "gray",
     hash: "0101be",
   },
 ];
 
 const log = [
-  { date: "2025.01.01", title: "留下新年的第一張照片", hash: "0101be" },
-  { date: "2024.07.06", title: "記錄途中發生的小事", hash: "7c06ad" },
-  { date: "2024.02.14", title: "把這一天放進檔案", hash: "a14f2e" },
+  { date: "2025.01.01", title: "Saved the first photograph of the year", hash: "0101be" },
+  { date: "2024.07.06", title: "Recorded the small things along the way", hash: "7c06ad" },
+  { date: "2024.02.14", title: "Placed this day in the archive", hash: "a14f2e" },
 ];
 
 export default function Home() {
@@ -40,11 +40,11 @@ export default function Home() {
       <header className="site-header">
         <a className="archive-mark" href="#top">
           <span>ARCHIVE</span>
-          <strong>我們的回憶</strong>
+          <strong>Our Memories</strong>
         </a>
-        <nav aria-label="網站導覽">
-          <a href="#records">影像紀錄</a>
-          <a href="#log">時間紀錄</a>
+        <nav aria-label="Site navigation">
+          <a href="#records">Photographs</a>
+          <a href="#log">Timeline</a>
           <span className="privacy">PRIVATE COLLECTION</span>
         </nav>
       </header>
@@ -55,19 +55,19 @@ export default function Home() {
           <span>STATUS / PRESERVED</span>
         </div>
         <div className="hero-copy">
-          <p className="kicker">關於我們曾經共享的時間</p>
+          <p className="kicker">About the time we once shared</p>
           <h1>
-            我們確實
+            We really
             <br />
-            一起走過
+            were here
           </h1>
           <p className="lead">
-            不替未來命名，
+            No promises about the future.
             <br />
-            只把已經發生的好好保存。
+            Only care for what has already happened.
           </p>
         </div>
-        <div className="contact-sheet" aria-label="回憶照片預留位置">
+        <div className="contact-sheet" aria-label="Placeholders for memory photographs">
           {Array.from({ length: 12 }, (_, index) => (
             <div className={`frame frame-${(index % 4) + 1}`} key={index}>
               <span>{String(index + 1).padStart(2, "0")}</span>
@@ -79,7 +79,8 @@ export default function Home() {
           </div>
         </div>
         <p className="hero-caption">
-          這裡不是一封要求答案的情書。它只是一個地方，讓那些真實存在過的日子，不因距離或時間而消失。
+          This is not a love letter asking for an answer. It is simply a place where the days that
+          truly happened do not have to disappear because of distance or time.
         </p>
       </section>
 
@@ -88,9 +89,9 @@ export default function Home() {
           <span>01</span>
           <div>
             <p>SELECTED RECORDS</p>
-            <h2>被留下來的片段</h2>
+            <h2>Fragments we kept</h2>
           </div>
-          <p className="section-note">照片之後可以換成你們真正的影像</p>
+          <p className="section-note">These placeholders can later become your real photographs.</p>
         </div>
 
         <div className="record-grid">
@@ -115,14 +116,14 @@ export default function Home() {
       <section className="statement">
         <p className="statement-label">ARCHIVE NOTE</p>
         <blockquote>
-          「有些關係會改變，有些人會走向不同的地方。
+          “Some relationships change. Some people move toward different places.
           <br />
-          但曾經真心對待彼此的時間，不需要被否定。」
+          But the time we treated each other with care does not need to be erased.”
         </blockquote>
         <p className="statement-body">
-          回憶永存，不代表要求一段關係永遠不變。
+          Preserving a memory does not mean asking a relationship to remain unchanged forever.
           <br />
-          它只是承認：這些日子曾經發生，而且對我很重要。
+          It only means admitting that these days happened—and that they mattered to me.
         </p>
       </section>
 
@@ -130,7 +131,7 @@ export default function Home() {
         <div className="history-heading">
           <div>
             <p>VERSION HISTORY</p>
-            <h2>時間留下的紀錄</h2>
+            <h2>What time left behind</h2>
           </div>
           <span>archive/main</span>
         </div>
@@ -147,8 +148,8 @@ export default function Home() {
       </section>
 
       <footer>
-        <span>我們的回憶 / PRIVATE ARCHIVE</span>
-        <p>保存已經發生的，不預設尚未到來的。</p>
+        <span>OUR MEMORIES / PRIVATE ARCHIVE</span>
+        <p>Preserving what happened, without defining what has not.</p>
       </footer>
     </main>
   );

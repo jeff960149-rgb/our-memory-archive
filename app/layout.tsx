@@ -27,21 +27,21 @@ export async function generateMetadata(): Promise<Metadata> {
   const socialImage = `${origin}/og.png`;
 
   return {
-    title: "我們確實一起走過",
-    description: "不替未來命名，只把已經發生的好好保存。",
+    title: "We Really Were Here",
+    description: "No promises about the future. Only care for what has already happened.",
     icons: {
       icon: "/favicon.svg",
       shortcut: "/favicon.svg",
     },
     openGraph: {
-      title: "我們確實一起走過",
-      description: "不替未來命名，只把已經發生的好好保存。",
+      title: "We Really Were Here",
+      description: "No promises about the future. Only care for what has already happened.",
       images: [{ url: socialImage, width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "我們確實一起走過",
-      description: "不替未來命名，只把已經發生的好好保存。",
+      title: "We Really Were Here",
+      description: "No promises about the future. Only care for what has already happened.",
       images: [socialImage],
     },
   };
@@ -53,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-Hant">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${notoSerif.variable}`}
       >
