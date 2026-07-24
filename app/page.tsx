@@ -91,17 +91,7 @@ export default function Home() {
       </section>
 
       <section className="statement">
-        <p className="statement-label">ARCHIVE NOTE</p>
-        <blockquote>
-          “Some relationships change. Some people move toward different places.
-          <br />
-          But the time we treated each other with care does not need to be erased.”
-        </blockquote>
-        <p className="statement-body">
-          Preserving a memory does not mean asking a relationship to remain unchanged forever.
-          <br />
-          It only means admitting that these days happened—and that they mattered to me.
-        </p>
+        <blockquote>to be continued....</blockquote>
       </section>
 
       <section className="history" id="log">
