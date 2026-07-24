@@ -59,7 +59,7 @@ export default function Home() {
         </div>
         <img
           className="lyric-image-card"
-          src="/iris-lyrics.png"
+          src="/iris-lyrics-red.png"
           alt="Iris by The Goo Goo Dolls lyric card"
         />
       </section>
