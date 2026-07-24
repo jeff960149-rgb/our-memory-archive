@@ -43,16 +43,12 @@ export default function Home() {
           <span>STATUS / PRESERVED</span>
         </div>
         <div className="hero-copy">
-          <p className="kicker">About the time we once shared</p>
-          <h1>
-            We really
-            <br />
-            were here
-          </h1>
+          <p className="kicker">What I want you to know</p>
+          <h1>I love you</h1>
           <p className="lead">
-            No promises about the future.
+            I believe you will succeed—
             <br />
-            Only care for what has already happened.
+            in your career, your friendships, and in love.
           </p>
         </div>
         <div className="contact-sheet" aria-label="Placeholders for memory photographs">
@@ -66,10 +62,7 @@ export default function Home() {
             <span>SHARED DAYS</span>
           </div>
         </div>
-        <p className="hero-caption">
-          This is not a love letter asking for an answer. It is simply a place where the days that
-          truly happened do not have to disappear because of distance or time.
-        </p>
+        <p className="hero-caption">When you do, I&apos;ll be so happy for you.</p>
       </section>
 
       <section className="records" id="records">
