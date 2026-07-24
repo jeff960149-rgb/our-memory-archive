@@ -272,16 +272,33 @@ h1 {
   font-size: 15px;
 }
 
-.sound-mark {
-  display: grid;
+.spotify-mark {
+  display: flex;
   width: 31px;
   height: 31px;
-  place-items: center;
-  color: #ff2026;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
   background: #151515;
   border-radius: 50%;
-  font: 700 22px/1 var(--font-geist-sans), sans-serif;
-  transform: rotate(-8deg);
+}
+
+.spotify-mark i {
+  display: block;
+  width: 18px;
+  height: 5px;
+  border-top: 2px solid #ff2026;
+  border-radius: 50%;
+  transform: rotate(7deg);
+}
+
+.spotify-mark i:nth-child(2) {
+  width: 16px;
+}
+
+.spotify-mark i:nth-child(3) {
+  width: 13px;
 }
 
 .hero-caption {

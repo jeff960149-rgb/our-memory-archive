@@ -67,8 +67,12 @@ export default function Home() {
             that you love me
           </p>
           <div className="lyric-card-footer">
-            <span className="sound-mark" aria-hidden="true">≈</span>
-            <strong>OUR SONG</strong>
+            <span className="spotify-mark" aria-hidden="true">
+              <i />
+              <i />
+              <i />
+            </span>
+            <strong>Spotify</strong>
           </div>
         </div>
         <p className="hero-caption">When you do, I&apos;ll be so happy for you.</p>
