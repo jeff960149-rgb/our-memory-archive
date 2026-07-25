@@ -613,6 +613,16 @@ h1 {
   transform: rotate(-12deg);
 }
 
+.dark-polaroid figcaption {
+  position: absolute;
+  left: 24px;
+  right: 74px;
+  bottom: 24px;
+  color: #211f1f;
+  text-align: left;
+  font: 700 clamp(16px, 1.5vw, 22px)/1.15 var(--font-noto-serif), serif;
+}
+
 .statement-label {
   color: #bf817b;
 }

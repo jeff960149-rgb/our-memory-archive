@@ -94,18 +94,21 @@ export default function Home() {
             <div className="dark-polaroid-image">
               <img src="/memories/memory-04.jpg" alt="Us taking a mirror selfie together" />
             </div>
+            <figcaption>Our first photo!!</figcaption>
             <span aria-hidden="true">★</span>
           </figure>
           <figure className="dark-polaroid">
             <div className="dark-polaroid-image">
               <img src="/memories/memory-05.jpg" alt="Us sitting together at the cinema" />
             </div>
+            <figcaption>Movieeeee</figcaption>
             <span aria-hidden="true">★</span>
           </figure>
           <figure className="dark-polaroid">
             <div className="dark-polaroid-image">
               <img src="/memories/memory-06.jpg" alt="A sunny moment on the bus" />
             </div>
+            <figcaption>My fav pic of you</figcaption>
             <span aria-hidden="true">★</span>
           </figure>
         </div>
