@@ -642,9 +642,33 @@ blockquote {
 }
 
 .history {
-  width: min(1180px, calc(100% - 72px));
+  width: 100%;
+  margin: 0;
+  padding: 120px 36px;
+  background: #70263d;
+}
+
+.letter-page {
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 120px 0 140px;
+  padding: clamp(54px, 7vw, 100px);
+  color: #33262a;
+  background: #fff8ee;
+  border-left: 9px solid #d88da5;
+  box-shadow: 14px 18px 0 #50192b;
+}
+
+.letter-copy {
+  margin: 0;
+  font: 500 clamp(27px, 3.1vw, 46px)/1.62 var(--font-noto-serif), serif;
+  letter-spacing: -0.025em;
+}
+
+.drop-cap {
+  float: left;
+  margin: 0.12em 0.12em 0 0;
+  color: #a93b5d;
+  font: 700 clamp(104px, 12vw, 176px)/0.72 var(--font-noto-serif), serif;
 }
 
 .history-heading {
@@ -876,7 +900,18 @@ footer p {
   }
 
   .history {
-    padding: 90px 0 100px;
+    width: 100%;
+    padding: 72px 18px;
+  }
+
+  .letter-page {
+    padding: 42px 30px 50px;
+    border-left-width: 6px;
+    box-shadow: 8px 10px 0 #50192b;
+  }
+
+  .letter-copy {
+    font-size: 24px;
   }
 
   .history-heading {

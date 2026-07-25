@@ -115,11 +115,14 @@ export default function Home() {
       </section>
 
       <section className="history" id="log">
-        <div className="history-heading">
-          <div>
-            <h2>to be continued....</h2>
-          </div>
-        </div>
+        <article className="letter-page">
+          <p className="letter-copy">
+            <span className="drop-cap">H</span>eyyy, if you miss me, you can call me whenever you
+            want! If you feel stuck in life, remember that I’m the one who always believes in you.
+            Don’t doubt yourself because of one tiny mistake or some shitty people. No matter what,
+            I’ll always support you!!
+          </p>
+        </article>
       </section>
 
       <footer>
