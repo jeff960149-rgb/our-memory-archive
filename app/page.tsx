@@ -18,7 +18,7 @@ const records = [
     note: "Some moments were happy for no special reason. We simply happened to be there together.",
     tone: "blue",
     hash: "7c06ad",
-    image: "/memories/memory-02.png",
+    image: "/memories/memory-02-cropped.png",
     alt: "A sunny day in the park with a bouquet of flowers",
   },
   {
