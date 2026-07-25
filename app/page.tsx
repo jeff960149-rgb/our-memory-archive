@@ -125,6 +125,23 @@ export default function Home() {
         </article>
       </section>
 
+      <section className="vinyl-page" aria-label="Vinyl record and empty polaroid photo frames">
+        <div className="vinyl-record" aria-hidden="true">
+          <div className="vinyl-label">
+            <span>SIDE A</span>
+            <span>33⅓ RPM</span>
+            <strong>STEREO</strong>
+          </div>
+        </div>
+        <div className="vinyl-polaroids">
+          {[1, 2, 3].map((item) => (
+            <div className={`vinyl-polaroid vinyl-polaroid-${item}`} key={item}>
+              <div className="vinyl-photo-window" />
+            </div>
+          ))}
+        </div>
+      </section>
+
       <footer>
         <span>OUR MEMORIES / PRIVATE ARCHIVE</span>
         <p>Preserving what happened, without defining what has not.</p>

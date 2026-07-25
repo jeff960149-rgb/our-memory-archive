@@ -670,6 +670,94 @@ blockquote {
   font: 700 clamp(104px, 12vw, 176px)/0.72 var(--font-noto-serif), serif;
 }
 
+.vinyl-page {
+  min-height: 980px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 18%, rgba(216, 141, 165, 0.12), transparent 28%),
+    #f7f0e7;
+}
+
+.vinyl-record {
+  width: 790px;
+  aspect-ratio: 1;
+  position: absolute;
+  left: -230px;
+  top: 92px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    repeating-radial-gradient(circle, #111 0 3px, #252525 4px 6px, #0b0b0b 7px 9px);
+  box-shadow: 18px 22px 38px rgba(45, 29, 31, 0.24);
+}
+
+.vinyl-record::after {
+  content: "";
+  width: 12px;
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 50%;
+  background: #111;
+}
+
+.vinyl-label {
+  width: 230px;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  color: #272321;
+  background: #eee7dd;
+  border: 1px solid #8f8982;
+  border-radius: 50%;
+  font: 11px var(--font-geist-mono), monospace;
+  letter-spacing: 0.04em;
+}
+
+.vinyl-label strong {
+  font-size: 15px;
+}
+
+.vinyl-polaroids {
+  position: absolute;
+  inset: 0;
+}
+
+.vinyl-polaroid {
+  width: clamp(250px, 22vw, 340px);
+  position: absolute;
+  padding: 15px 15px 76px;
+  background: #fff;
+  box-shadow: 8px 12px 18px rgba(47, 34, 31, 0.24);
+}
+
+.vinyl-photo-window {
+  aspect-ratio: 1;
+  background: #050505;
+}
+
+.vinyl-polaroid-1 {
+  left: 42%;
+  top: 72px;
+  transform: rotate(-8deg);
+}
+
+.vinyl-polaroid-2 {
+  left: 64%;
+  top: 330px;
+  transform: rotate(11deg);
+}
+
+.vinyl-polaroid-3 {
+  left: 38%;
+  top: 600px;
+  transform: rotate(-10deg);
+}
+
 .history-heading {
   display: flex;
   align-items: end;
@@ -778,6 +866,19 @@ footer p {
     grid-column: 1 / -1;
     width: calc(50% - 14px);
     justify-self: center;
+  }
+
+  .vinyl-record {
+    width: 680px;
+    left: -300px;
+  }
+
+  .vinyl-polaroid-1 {
+    left: 38%;
+  }
+
+  .vinyl-polaroid-2 {
+    left: 60%;
   }
 }
 
@@ -911,6 +1012,41 @@ footer p {
 
   .letter-copy {
     font-size: 24px;
+  }
+
+  .vinyl-page {
+    min-height: 1320px;
+  }
+
+  .vinyl-record {
+    width: 560px;
+    left: -310px;
+    top: 110px;
+  }
+
+  .vinyl-label {
+    width: 170px;
+    gap: 18px;
+  }
+
+  .vinyl-polaroid {
+    width: min(260px, 68vw);
+    padding: 11px 11px 58px;
+  }
+
+  .vinyl-polaroid-1 {
+    left: 26%;
+    top: 80px;
+  }
+
+  .vinyl-polaroid-2 {
+    left: 18%;
+    top: 500px;
+  }
+
+  .vinyl-polaroid-3 {
+    left: 28%;
+    top: 900px;
   }
 
   .history-heading {
