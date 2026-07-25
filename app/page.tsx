@@ -129,16 +129,26 @@ export default function Home() {
         <div className="vinyl-record" aria-hidden="true">
           <div className="vinyl-label">
             <span>SIDE A</span>
-            <span>33⅓ RPM</span>
-            <strong>STEREO</strong>
+            <strong>CJY LOVE</strong>
+            <b>MYJ</b>
           </div>
         </div>
         <div className="vinyl-polaroids">
-          {[1, 2, 3].map((item) => (
-            <div className={`vinyl-polaroid vinyl-polaroid-${item}`} key={item}>
-              <div className="vinyl-photo-window" />
+          <div className="vinyl-polaroid vinyl-polaroid-1">
+            <div className="vinyl-photo-window">
+              <img src="/memories/memory-07.png" alt="A mirror selfie in the fitting room" />
             </div>
-          ))}
+          </div>
+          <div className="vinyl-polaroid vinyl-polaroid-2">
+            <div className="vinyl-photo-window">
+              <img src="/memories/memory-08.png" alt="Holding two drinks together" />
+            </div>
+          </div>
+          <div className="vinyl-polaroid vinyl-polaroid-3">
+            <div className="vinyl-photo-window">
+              <img src="/memories/memory-09.png" alt="A selfie of us together" />
+            </div>
+          </div>
         </div>
       </section>
 

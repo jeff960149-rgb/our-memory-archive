@@ -720,7 +720,13 @@ blockquote {
 }
 
 .vinyl-label strong {
-  font-size: 15px;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+}
+
+.vinyl-label b {
+  font-size: 24px;
+  letter-spacing: 0.16em;
 }
 
 .vinyl-polaroids {
@@ -739,6 +745,26 @@ blockquote {
 .vinyl-photo-window {
   aspect-ratio: 1;
   background: #050505;
+  overflow: hidden;
+}
+
+.vinyl-photo-window img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.vinyl-polaroid-1 img {
+  object-position: center 42%;
+}
+
+.vinyl-polaroid-2 img {
+  object-position: center 35%;
+}
+
+.vinyl-polaroid-3 img {
+  object-position: center 45%;
 }
 
 .vinyl-polaroid-1 {
