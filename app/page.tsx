@@ -128,9 +128,7 @@ export default function Home() {
       <section className="vinyl-page" aria-label="Vinyl record and empty polaroid photo frames">
         <div className="vinyl-record" aria-hidden="true">
           <div className="vinyl-label">
-            <span>SIDE A</span>
-            <strong>CJY LOVE</strong>
-            <b>MYJ</b>
+            <strong className="vinyl-love-title">{"CJY <3 MYJ"}</strong>
           </div>
         </div>
         <div className="vinyl-polaroids">

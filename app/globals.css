@@ -718,14 +718,12 @@ blockquote {
   letter-spacing: 0.04em;
 }
 
-.vinyl-label strong {
-  font-size: 18px;
-  letter-spacing: 0.08em;
-}
-
-.vinyl-label b {
-  font-size: 24px;
-  letter-spacing: 0.16em;
+.vinyl-label .vinyl-love-title {
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+  font-size: 17px;
+  letter-spacing: 0.06em;
 }
 
 .vinyl-polaroids {
