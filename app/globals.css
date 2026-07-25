@@ -764,6 +764,17 @@ blockquote {
   object-position: center 45%;
 }
 
+.vinyl-polaroid > p {
+  margin: 0;
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  color: #292322;
+  text-align: left;
+  font: 700 clamp(14px, 1.25vw, 19px)/1.15 var(--font-noto-serif), serif;
+}
+
 .vinyl-polaroid-1 {
   left: 42%;
   top: 72px;

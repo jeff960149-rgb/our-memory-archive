@@ -136,16 +136,19 @@ export default function Home() {
             <div className="vinyl-photo-window">
               <img src="/memories/memory-07.png" alt="A mirror selfie in the fitting room" />
             </div>
+            <p>Yay , babe I love this shirt</p>
           </div>
           <div className="vinyl-polaroid vinyl-polaroid-2">
             <div className="vinyl-photo-window">
               <img src="/memories/memory-08.png" alt="Holding two drinks together" />
             </div>
+            <p>you&apos;re sweeter than the drinks</p>
           </div>
           <div className="vinyl-polaroid vinyl-polaroid-3">
             <div className="vinyl-photo-window">
               <img src="/memories/memory-09.png" alt="A selfie of us together" />
             </div>
+            <p>oh idk this one but very cute haha</p>
           </div>
         </div>
       </section>
