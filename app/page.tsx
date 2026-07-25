@@ -89,7 +89,26 @@ export default function Home() {
       </section>
 
       <section className="statement">
-        <blockquote>to be continued....</blockquote>
+        <div className="dark-polaroid-grid">
+          <figure className="dark-polaroid">
+            <div className="dark-polaroid-image">
+              <img src="/memories/memory-04.jpg" alt="Us taking a mirror selfie together" />
+            </div>
+            <span aria-hidden="true">★</span>
+          </figure>
+          <figure className="dark-polaroid">
+            <div className="dark-polaroid-image">
+              <img src="/memories/memory-05.jpg" alt="Us sitting together at the cinema" />
+            </div>
+            <span aria-hidden="true">★</span>
+          </figure>
+          <figure className="dark-polaroid">
+            <div className="dark-polaroid-image">
+              <img src="/memories/memory-06.jpg" alt="A sunny moment on the bus" />
+            </div>
+            <span aria-hidden="true">★</span>
+          </figure>
+        </div>
       </section>
 
       <section className="history" id="log">
