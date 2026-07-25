@@ -115,6 +115,14 @@ export default function Home() {
       </section>
 
       <section className="history" id="log">
+        <div className="letter-hearts" aria-hidden="true">
+          <span>♡</span>
+          <span>♥</span>
+          <span>♡</span>
+          <span>♥</span>
+          <span>♡</span>
+          <span>♡</span>
+        </div>
         <article className="letter-page">
           <p className="letter-copy">
             <span className="drop-cap">H</span>eyyy, if you miss me, you can call me whenever you
