@@ -44,10 +44,6 @@ export default function Home() {
   return (
     <main>
       <section className="hero" id="top">
-        <div className="hero-index">
-          <span>COLLECTION / 01</span>
-          <span>STATUS / PRESERVED</span>
-        </div>
         <div className="hero-copy">
           <p className="kicker">What I want you to know</p>
           <h1>I love you</h1>
