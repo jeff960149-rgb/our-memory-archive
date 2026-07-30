@@ -18,25 +18,37 @@
       content="https://jeff960149-rgb.github.io/our-memory-archive/og.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" href="./styles.css?v=17" />
+    <link rel="stylesheet" href="./styles.css?v=18" />
   </head>
   <body>
     <main>
       <section class="hero" id="top">
-        <div class="hero-copy">
-          <p class="kicker">What I want you to know</p>
-          <h1>I love you</h1>
-          <p class="lead">
-            I believe you will succeed—<br />
-            in your career, your friendships, and in love.
-          </p>
-        </div>
-        <div class="lyric-image-frame">
-          <img
-            class="lyric-image-card"
-            src="./iris-lyrics-red.png"
-            alt="Iris by The Goo Goo Dolls lyric card"
-          />
+        <div class="music-player">
+          <figure class="player-polaroid">
+            <img
+              src="./memories/hero-player-photo.png"
+              alt="Us cuddling together on the grass"
+            />
+          </figure>
+          <div class="player-timeline" aria-label="Song progress">
+            <span>0:00</span>
+            <div class="player-track"><i></i></div>
+            <span>3:21</span>
+          </div>
+          <div class="player-controls">
+            <button type="button" aria-label="Shuffle">⌁</button>
+            <button type="button" aria-label="Previous song">◀</button>
+            <a
+              class="player-play"
+              href="https://open.spotify.com/search/Iris%20The%20Goo%20Goo%20Dolls"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Play Iris on Spotify"
+            >▶</a>
+            <button type="button" aria-label="Next song">▶</button>
+            <button type="button" aria-label="Repeat">↻</button>
+          </div>
+          <p class="player-song">Iris · The Goo Goo Dolls</p>
         </div>
       </section>
 

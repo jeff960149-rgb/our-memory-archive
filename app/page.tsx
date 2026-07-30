@@ -44,21 +44,36 @@ export default function Home() {
   return (
     <main>
       <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="kicker">What I want you to know</p>
-          <h1>I love you</h1>
-          <p className="lead">
-            I believe you will succeed—
-            <br />
-            in your career, your friendships, and in love.
-          </p>
-        </div>
-        <div className="lyric-image-frame">
-          <img
-            className="lyric-image-card"
-            src="/iris-lyrics-red.png"
-            alt="Iris by The Goo Goo Dolls lyric card"
-          />
+        <div className="music-player">
+          <figure className="player-polaroid">
+            <img
+              src="/memories/hero-player-photo.png"
+              alt="Us cuddling together on the grass"
+            />
+          </figure>
+
+          <div className="player-timeline" aria-label="Song progress">
+            <span>0:00</span>
+            <div className="player-track"><i /></div>
+            <span>3:21</span>
+          </div>
+
+          <div className="player-controls">
+            <button type="button" aria-label="Shuffle">⌁</button>
+            <button type="button" aria-label="Previous song">◀</button>
+            <a
+              className="player-play"
+              href="https://open.spotify.com/search/Iris%20The%20Goo%20Goo%20Dolls"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Play Iris on Spotify"
+            >
+              ▶
+            </a>
+            <button type="button" aria-label="Next song">▶</button>
+            <button type="button" aria-label="Repeat">↻</button>
+          </div>
+          <p className="player-song">Iris · The Goo Goo Dolls</p>
         </div>
       </section>
 
