@@ -18,7 +18,7 @@
       content="https://jeff960149-rgb.github.io/our-memory-archive/og.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="stylesheet" href="./styles.css?v=18" />
+    <link rel="stylesheet" href="./styles.css?v=19" />
   </head>
   <body>
     <main>
@@ -29,26 +29,22 @@
               src="./memories/hero-player-photo.png"
               alt="Us cuddling together on the grass"
             />
+            <figcaption>I love my Cutiepie&lt;3</figcaption>
           </figure>
+          <audio id="memory-song" preload="metadata" src="./hey-there-delilah.mp3"></audio>
           <div class="player-timeline" aria-label="Song progress">
-            <span>0:00</span>
-            <div class="player-track"><i></i></div>
-            <span>3:21</span>
+            <span id="current-time">0:00</span>
+            <input id="player-range" class="player-range" type="range" min="0" max="0" step="0.1" value="0" aria-label="Song progress" />
+            <span id="duration">0:00</span>
           </div>
           <div class="player-controls">
-            <button type="button" aria-label="Shuffle">⌁</button>
-            <button type="button" aria-label="Previous song">◀</button>
-            <a
-              class="player-play"
-              href="https://open.spotify.com/search/Iris%20The%20Goo%20Goo%20Dolls"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Play Iris on Spotify"
-            >▶</a>
-            <button type="button" aria-label="Next song">▶</button>
-            <button type="button" aria-label="Repeat">↻</button>
+            <button id="restart-song" type="button" aria-label="Restart song">↶</button>
+            <button id="back-song" type="button" aria-label="Go back 10 seconds">◀</button>
+            <button id="play-song" class="player-play" type="button" aria-label="Play">▶</button>
+            <button id="forward-song" type="button" aria-label="Go forward 10 seconds">▶</button>
+            <button id="loop-song" type="button" aria-label="Repeat song">↻</button>
           </div>
-          <p class="player-song">Iris · The Goo Goo Dolls</p>
+          <p class="player-song">Hey There Delilah · Plain White T's</p>
         </div>
       </section>
 
@@ -168,5 +164,63 @@
         <p>Preserving what happened, without defining what has not.</p>
       </footer>
     </main>
+    <script>
+      const audio = document.querySelector("#memory-song");
+      const playButton = document.querySelector("#play-song");
+      const range = document.querySelector("#player-range");
+      const currentLabel = document.querySelector("#current-time");
+      const durationLabel = document.querySelector("#duration");
+      const loopButton = document.querySelector("#loop-song");
+
+      const formatTime = (seconds) => {
+        if (!Number.isFinite(seconds)) return "0:00";
+        const minutes = Math.floor(seconds / 60);
+        return `${minutes}:${Math.floor(seconds % 60).toString().padStart(2, "0")}`;
+      };
+
+      const syncPlayer = () => {
+        range.max = audio.duration || 0;
+        range.value = audio.currentTime;
+        range.style.setProperty("--progress", `${audio.duration ? (audio.currentTime / audio.duration) * 100 : 0}%`);
+        currentLabel.textContent = formatTime(audio.currentTime);
+        durationLabel.textContent = formatTime(audio.duration);
+      };
+
+      playButton.addEventListener("click", async () => {
+        if (audio.paused) {
+          await audio.play();
+          playButton.textContent = "Ⅱ";
+          playButton.setAttribute("aria-label", "Pause");
+        } else {
+          audio.pause();
+          playButton.textContent = "▶";
+          playButton.setAttribute("aria-label", "Play");
+        }
+      });
+      range.addEventListener("input", () => {
+        audio.currentTime = Number(range.value);
+        syncPlayer();
+      });
+      document.querySelector("#restart-song").addEventListener("click", () => {
+        audio.currentTime = 0;
+      });
+      document.querySelector("#back-song").addEventListener("click", () => {
+        audio.currentTime = Math.max(0, audio.currentTime - 10);
+      });
+      document.querySelector("#forward-song").addEventListener("click", () => {
+        audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 10);
+      });
+      loopButton.addEventListener("click", () => {
+        audio.loop = !audio.loop;
+        loopButton.classList.toggle("is-active", audio.loop);
+      });
+      audio.addEventListener("timeupdate", syncPlayer);
+      audio.addEventListener("loadedmetadata", syncPlayer);
+      audio.addEventListener("durationchange", syncPlayer);
+      audio.addEventListener("ended", () => {
+        playButton.textContent = "▶";
+        playButton.setAttribute("aria-label", "Play");
+      });
+    </script>
   </body>
 </html>

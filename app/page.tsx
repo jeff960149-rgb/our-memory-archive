@@ -1,3 +1,5 @@
+import MusicPlayer from "./MusicPlayer";
+
 const records = [
   {
     no: "001",
@@ -43,39 +45,7 @@ const log = [
 export default function Home() {
   return (
     <main>
-      <section className="hero" id="top">
-        <div className="music-player">
-          <figure className="player-polaroid">
-            <img
-              src="/memories/hero-player-photo.png"
-              alt="Us cuddling together on the grass"
-            />
-          </figure>
-
-          <div className="player-timeline" aria-label="Song progress">
-            <span>0:00</span>
-            <div className="player-track"><i /></div>
-            <span>3:21</span>
-          </div>
-
-          <div className="player-controls">
-            <button type="button" aria-label="Shuffle">⌁</button>
-            <button type="button" aria-label="Previous song">◀</button>
-            <a
-              className="player-play"
-              href="https://open.spotify.com/search/Iris%20The%20Goo%20Goo%20Dolls"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Play Iris on Spotify"
-            >
-              ▶
-            </a>
-            <button type="button" aria-label="Next song">▶</button>
-            <button type="button" aria-label="Repeat">↻</button>
-          </div>
-          <p className="player-song">Iris · The Goo Goo Dolls</p>
-        </div>
-      </section>
+      <MusicPlayer />
 
       <section className="records" id="records">
         <div className="section-title">
