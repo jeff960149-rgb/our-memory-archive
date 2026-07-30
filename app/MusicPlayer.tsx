@@ -70,6 +70,21 @@ export default function MusicPlayer() {
 
   return (
     <section className="hero" id="top">
+      <div className="player-intro">
+        <p className="intro-opening">Oh, you&apos;re here!! Let me show you around their memories.</p>
+        <p>
+          The girl with the gorgeous smile is Karin, and the boy who&apos;s obsessed with her is
+          Marco.
+        </p>
+        <p>
+          They fell in love in the U.S., but Marco isn&apos;t from here, so he had to go back to
+          his country...
+        </p>
+        <p>
+          But Marco promised Karin that he would come back one day just to hug her again.
+          Let&apos;s see if he&apos;s a liar!!!
+        </p>
+      </div>
       <div className="music-player">
         <figure className="player-polaroid">
           <img src="/memories/hero-player-photo.png" alt="Us cuddling together on the grass" />
